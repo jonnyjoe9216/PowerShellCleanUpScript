@@ -5,6 +5,10 @@ Simple PowerShell Script to clean-up target directory.
 ## Description
 
 This script is created to forcely delete files to multiple target directory and uses configuration file for email notification and other required configuration.
+-Delete only specific file type based on the given configurations (e.g. : .tmp, .txt, .xls, etc.)
+-Uses configuration for easy adjust settings without editing the actual script.
+-Send compiled results to the support team with all the lists of the files deleted and the total file size of all logs.
+
 
 ## Getting Started
 
@@ -14,16 +18,18 @@ PowerShell v5
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+Edit config.conf base on your required configuration mail address, smtp, etc.
+FileEXT.csv - add the lists of the files that will be deleted by the script.
+FolderList.csv - add the target directory here.
 
 ### Executing program
 
 * How to run the program
 * Step-by-step bullets
 ```
-code blocks for commands
+C:\YourDirectory\CleanUpScript.ps1
 ```
+You can also add this script via Task Scheduler.
 
 ## Help
 
